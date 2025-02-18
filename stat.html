@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statutory Status List</title>
+    <link rel="stylesheet" href="stat.css">
+    <style>
+        .content {
+            display: none;
+        }
+        .menu ul li button:hover + .content {
+            display: block;
+            position: absolute;
+            background-color: white;
+            padding: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            left: 10%;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li>
+                <button onclick="location.href='index.html'">Home</button>
+                <div class="content">Welcome to AMA FILING STATION , TIKIRI </div>
+            </li>
+            <li>
+                <button onclick="location.href='#'">About</button>
+                <div class="content">Propertier : Guptaswar Sahu</div>
+            </li>
+            <li>
+                <button onclick="location.href='#'">Statutory Status List</button>
+            </li>
+            <li>
+                <button onclick="location.href='#'">Contact</button>
+                <div class="content">Contact: 9937472107.</div>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Statutory Status List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sl No</th>
+                    <th>Name</th>
+                    <th>Exp Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>Explosive</td><td><input type="date"></td></tr>
+                <tr><td>2</td><td>Diesel License</td><td><input type="date"></td></tr>
+                <tr><td>3</td><td>Lube License</td><td><input type="date"></td></tr>
+                <tr><td>4</td><td>Fire License</td><td><input type="date"></td></tr>
+                <tr><td>5</td><td>Stamping</td><td><input type="date"></td></tr>
+                <tr><td>6</td><td>Fire Item</td><td><input type="date"></td></tr>
+                <tr><td>7</td><td>Air Gauge</td><td><input type="date"></td></tr>
+            </tbody>
+        </table>
+        <button class="save-button">Save</button>
+    </div>
+</body>
+</html>
